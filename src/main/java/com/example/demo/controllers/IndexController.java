@@ -1,5 +1,6 @@
 package com.example.demo.controllers;
 
+import com.example.demo.dtos.PublishRequest;
 import com.example.demo.services.RabbitMQSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,13 @@ public class IndexController
         message.put("a", "A");
         message.put("b", "B");
         rabbitMQSender.send(message, "spring-direct-exchange", "spring-direct-key");
+        return "Message Sent";
+    }
+
+    @PostMapping("/publish")
+    public String publish(@RequestBody PublishRequest request)
+    {
+        rabbitMQSender.send(request.getPayload(), request.getExchange(), request.getKey());
         return "Message Sent";
     }
 
