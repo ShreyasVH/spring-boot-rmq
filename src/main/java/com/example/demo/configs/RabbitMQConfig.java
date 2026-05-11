@@ -35,7 +35,7 @@ public class RabbitMQConfig
     @Bean
     Queue fanoutQueue()
     {
-        return new Queue("userservice.add_ack_user", false);
+        return new Queue("userservice.add_ack_user", true);
     }
 
     @Bean
