@@ -3,6 +3,7 @@ export PATH=
 
 # java 25.0.2 path
 export PATH=
+export JAVA_HOME=
 
 export PORT=
 
@@ -20,4 +21,3 @@ export RMQ_KEY_UNCONSUMED=
 
 # rmq 4.2.4 path
 export PATH=
-
