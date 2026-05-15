@@ -20,3 +20,4 @@ export RMQ_KEY_UNCONSUMED=
 
 # rmq 4.2.4 path
 export PATH=
+
