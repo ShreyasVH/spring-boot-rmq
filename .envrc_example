@@ -19,5 +19,5 @@ export RMQ_QUEUE_UNCONSUMED=
 export RMQ_KEY_CONSUMED=
 export RMQ_KEY_UNCONSUMED=
 
-# rmq 4.2.4 path
+# rabbitmqadmin 4.2.4 path
 export PATH=
