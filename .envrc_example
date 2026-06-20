@@ -1,4 +1,4 @@
-# maven 3.9.15 path
+# maven 3.9.16 path
 export PATH=
 
 # java 26.0.1 path
@@ -19,5 +19,5 @@ export RMQ_QUEUE_UNCONSUMED=
 export RMQ_KEY_CONSUMED=
 export RMQ_KEY_UNCONSUMED=
 
-# rabbitmqadmin 2.29.0 path
+# rabbitmqadmin 2.30.0 path
 export PATH=
